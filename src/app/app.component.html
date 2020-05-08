@@ -1,0 +1,19 @@
+<h2>{{ title }}</h2>
+<hr />
+<input type="text" [(ngModel)]="val1" style="width: 30px;" />
+&nbsp;&nbsp;&nbsp;
+{{ op }}
+&nbsp;&nbsp;&nbsp;
+<input type="text" [(ngModel)]="val2" style="width: 30px;" />
+&nbsp;&nbsp;&nbsp; = &nbsp;&nbsp;&nbsp;
+<input type="text" [(ngModel)]="val3" readonly style="width: 40px;" />
+<br /><br />
+<button (click)="calculate(1)">&nbsp;&nbsp;+&nbsp;&nbsp;</button>
+&nbsp;
+<button (click)="calculate(2)">&nbsp;&nbsp;-&nbsp;&nbsp;</button>
+&nbsp;
+<button (click)="calculate(3)">&nbsp;&nbsp;x&nbsp;&nbsp;</button>
+&nbsp;
+<button (click)="calculate(4)">&nbsp;&nbsp;%&nbsp;&nbsp;</button>
+&nbsp;
+<button (click)="clear()">&nbsp;&nbsp;C&nbsp;&nbsp;</button>
